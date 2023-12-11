@@ -1,0 +1,6 @@
+2023-12-11 22:05:47 ERROR OrderController:67 - Error password
+2023-12-11 22:05:48 INFO  OrderController:37 - Get order submission request for user: {Fish}
+2023-12-11 22:05:48 INFO  OrderController:46 - Order submitted successfully for user: {Fish}, Order ID: {null}
+2023-12-11 22:05:48 INFO  OrderController:53 - Get order history for user: {Fish}
+2023-12-11 22:05:48 INFO  OrderController:60 - Order history retrieved successfully for user: {Fish}
+2023-12-11 22:08:12 INFO  OrderController:80 - User created successfully. Username: {DangNV8}
