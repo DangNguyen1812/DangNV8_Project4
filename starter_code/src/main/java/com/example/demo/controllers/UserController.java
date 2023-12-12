@@ -5,6 +5,7 @@ import java.util.Optional;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -58,7 +59,7 @@ public class UserController {
 		}
 	}
 
-	@PostMapping("/create")
+	@PostMapping(value = "/create",consumes = {MediaType.APPLICATION_JSON_VALUE})
 	public ResponseEntity<User> createUser(@RequestBody CreateUserRequest createUserRequest) {
 		try {
 			if (createUserRequest.getUsername() != null && createUserRequest.getPassword() != null) {
